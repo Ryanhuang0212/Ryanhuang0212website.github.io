@@ -1,117 +1,68 @@
-/* 通用設定 */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
-  background-color: #f9f9f9;
-  color: #333;
+  font-family: "Helvetica Neue", Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background: #000000;           /* 全黑背景 */
+  color: #f1f1f1;                /* 亮灰白字 */
   line-height: 1.6;
-  animation: fadeIn 1s ease-in;
 }
 
-/* 淡入動畫效果 */
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-/* 頁首樣式 */
 header {
-  background: linear-gradient(to right, #00c6ff, #0072ff);
-  color: white;
-  padding: 40px 20px;
+  background: #111111;           /* 比 body 再亮一點 */
+  color: #00cfff;                /* 鮮藍標題字 */
   text-align: center;
-  border-radius: 0 0 20px 20px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  animation: slideDown 0.8s ease-out;
-}
-
-/* header 滑落動畫 */
-@keyframes slideDown {
-  from { transform: translateY(-30px); opacity: 0; }
-  to { transform: translateY(0); opacity: 1; }
+  padding: 50px 20px;
+  border-bottom: 2px solid #333;
 }
 
 header h1 {
-  margin: 0;
+  margin-bottom: 10px;
   font-size: 2.5em;
 }
 
-header p {
-  font-size: 1.2em;
-  margin-top: 10px;
-}
-
-nav {
-  margin-top: 15px;
-}
-
 nav a {
-  position: relative;
-  color: white;
-  margin: 0 12px;
+  margin: 0 15px;
+  color: #f1f1f1;
   text-decoration: none;
   font-weight: bold;
-  padding-bottom: 4px;
-  transition: all 0.3s ease;
-}
-
-nav a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 2px;
-  width: 0;
-  background-color: #ffdd57;
-  transition: width 0.3s ease;
-}
-
-nav a:hover::after {
-  width: 100%;
+  transition: color 0.3s;
 }
 
 nav a:hover {
-  color: #ffdd57;
+  color: #00cfff;
 }
 
-/* 主區塊 */
-section.intro {
+section {
+  padding: 60px 20px;
   max-width: 800px;
-  margin: 40px auto;
-  background: white;
-  padding: 30px;
+  margin: 60px auto;
+  background: #111111;
   border-radius: 12px;
-  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 10px rgba(0,255,255,0.1);  /* 微藍光暈 */
 }
 
-section.intro:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 18px rgba(0,0,0,0.15);
+section h2 {
+  color: #00cfff;
+  border-bottom: 1px solid #444;
+  padding-bottom: 10px;
 }
 
-/* 圖片樣式 */
 .profile-img {
   width: 160px;
   border-radius: 50%;
-  margin-bottom: 20px;
-  border: 5px solid #00c6ff;
-  transition: transform 0.3s ease;
+  margin: 20px 0;
+  border: 3px solid #00cfff;
 }
 
-.profile-img:hover {
-  transform: scale(1.05);
-}
-
-/* 響應式設計 */
-@media (max-width: 600px) {
-  header h1 {
-    font-size: 1.8em;
-  }
-
-  .profile-img {
-    width: 120px;
-  }
+footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 60px;
+  background-color: #111;
+  font-size: 0.9em;
+  color: #777;
 }
