@@ -115,3 +115,52 @@ footer {
   border: 3px solid #00cfff;
   box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
 }
+
+.info-card {
+  background-color: #11161b;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 30px;
+  margin: 30px auto;
+  max-width: 800px;
+  color: #eee;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.05);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.card-header h3 {
+  margin: 0;
+  color: #ffffff;
+  font-size: 1.4em;
+}
+
+.year {
+  color: #bbb;
+  font-size: 0.95em;
+  font-style: italic;
+}
+
+.info-card ul {
+  padding-left: 20px;
+  margin: 10px 0;
+}
+
+.info-card ul li {
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.info-card a {
+  color: #ff80df;
+  text-decoration: none;
+}
+
+.info-card a:hover {
+  text-decoration: underline;
+}
