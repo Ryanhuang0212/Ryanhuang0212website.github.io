@@ -1,7 +1,8 @@
 :root {
-  --bg: #000;
-  --fg: #f1f1f1;
-  --accent: #00cfff;
+  --bg: #0f0f0f;
+  --fg: #eee;
+  --subtext: #aaa;
+  --accent: #f1caff;
 }
 
 html {
@@ -149,15 +150,16 @@ footer {
   margin: 0.3em 0;
 }
 
+
 #hero {
   padding: 60px 20px;
-  background-color: #0f0f0f;
-  color: #eee;
+  background-color: var(--bg);
+  color: var(--fg);
 }
 
 .hero-container {
   display: flex;
-  flex-direction: row; /* 預設為橫向排列 */
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   max-width: 1100px;
@@ -178,13 +180,13 @@ footer {
 
 .hero-text h1 {
   font-size: 3em;
-  color: #f4aaff;
+  color: var(--accent);
   margin: 10px 0;
 }
 
 .hero-text h2 {
   font-size: 1.5em;
-  color: #aaa;
+  color: var(--subtext);
   margin-bottom: 20px;
 }
 
@@ -192,33 +194,33 @@ footer {
   display: inline-block;
   margin-right: 15px;
   margin-top: 15px;
-  color: #f1caff;
+  color: var(--accent);
   text-decoration: none;
   font-weight: bold;
-  border: 1px solid #f1caff;
+  border: 1px solid var(--accent);
   padding: 8px 14px;
   border-radius: 12px;
   transition: all 0.3s;
 }
 
 .hero-links a:hover {
-  background: #f1caff;
-  color: #0f0f0f;
+  background: var(--accent);
+  color: var(--bg);
 }
 
-/* 右邊的圖片樣式 */
+/* 照片樣式：圓角、陰影、尺寸統一 */
 .hero-image img {
   max-width: 300px;
   border-radius: 20px;
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+  box-shadow: 0 0 30px rgba(241, 202, 255, 0.15);
   transition: transform 0.3s ease;
 }
 
 .hero-image img:hover {
-  transform: scale(1.02);
+  transform: scale(1.03);
 }
 
-/* 手機板：上下排列 */
+/* 手機板自動改為上下排列 */
 @media (max-width: 768px) {
   .hero-container {
     flex-direction: column;
@@ -229,4 +231,3 @@ footer {
     margin-top: 20px;
   }
 }
-
