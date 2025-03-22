@@ -34,7 +34,7 @@ h1 {
 
 header p {
   font-size: 1.2em;
-  color: #ccc;
+  color:  var(--subtext);
 }
 
 nav {
@@ -86,7 +86,7 @@ section h2 {
 }
 
 .project-card h3 {
-  color: #00e0ff;
+  color: var(--accent);
   margin-bottom: 10px;
 }
 
@@ -136,18 +136,19 @@ footer {
 
 .card-header h3 {
   margin: 0;
-  color: #ffffff;
+  color: var(--accent);
   font-size: 1.4em;
 }
 
 .year {
-  color: #bbb;
+  color: var(--subtext);
   font-size: 0.95em;
   font-style: italic;
 }
 
 .info-card p {
   margin: 0.3em 0;
+  color: var(--fg)
 }
 
 
@@ -175,7 +176,7 @@ footer {
 
 .hero-text p {
   font-size: 1em;
-  color: #bbb;
+  color: var(--subtext);
 }
 
 .hero-text h1 {
