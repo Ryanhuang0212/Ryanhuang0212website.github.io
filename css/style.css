@@ -1,8 +1,8 @@
 :root {
   --bg: #0f0f0f;
-  --fg: #d9f4ff;
-  --subtext: #7ac8ff;
-  --accent: #00cfff;
+  --fg: #b3ecff;        /* 主文字色：亮藍白 */
+  --subtext: #66ccff;   /* 次文字色：清爽藍 */
+  --accent: #33e0ff;    /* 主強調色：科技藍亮點 */
 }
 
 html {
