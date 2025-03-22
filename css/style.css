@@ -148,3 +148,73 @@ footer {
 .info-card p {
   margin: 0.3em 0;
 }
+
+/* HERO 橫向主區塊 */
+#hero {
+  padding: 60px 20px;
+  background-color: #0f0f0f;
+  color: #eee;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: auto;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.hero-text h1 {
+  font-size: 3em;
+  color: #f4aaff;
+  margin: 10px 0;
+}
+
+.hero-text h2 {
+  font-size: 1.5em;
+  color: #aaa;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 1em;
+  color: #bbb;
+}
+
+.hero-links a {
+  display: inline-block;
+  margin-right: 15px;
+  margin-top: 15px;
+  color: #f1caff;
+  text-decoration: none;
+  font-weight: bold;
+  border: 1px solid #f1caff;
+  padding: 8px 14px;
+  border-radius: 12px;
+  transition: all 0.3s;
+}
+
+.hero-links a:hover {
+  background: #f1caff;
+  color: #0f0f0f;
+}
+
+/* 圓角圖片樣式 */
+.hero-image img {
+  max-width: 300px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.hero-image img:hover {
+  transform: scale(1.02);
+}
