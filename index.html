@@ -2,8 +2,8 @@
 <html lang="zh-Hant">
 <head>
   <meta charset="UTF-8">
-  <title>黃敬中的個人網站</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>黃敬中的個人網站</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -11,16 +11,34 @@
     <h1>嗨，我是敬中 👋</h1>
     <p>資料與能源的橋樑 💡📊</p>
     <nav>
-      <a href="index.html">首頁</a>
-      <a href="about.html">關於我</a>
-      <a href="projects.html">專案</a>
-      <a href="contact.html">聯絡我</a>
+      <a href="#about">關於我</a>
+      <a href="#projects">專案</a>
+      <a href="#contact">聯絡</a>
     </nav>
   </header>
 
-  <section class="intro">
+  <section id="about">
+    <h2>關於我</h2>
     <img src="assets/Me.png" alt="個人照片" class="profile-img">
-    <p>歡迎來到我的網站！我是一位對資料分析、儲能技術與非侵入負載監測（NILM）充滿熱情的研究生。</p>
+    <p>我是來自台灣的研究生，研究領域包括 NILM、資料分析、節能技術。</p>
   </section>
+
+  <section id="projects">
+    <h2>專案</h2>
+    <ul>
+      <li><strong>NILM 設備分類模型：</strong> 使用 HHT + DWT 特徵訓練分類器。</li>
+      <li><strong>能源儀表板：</strong> 使用 Python + Dash 視覺化用電數據。</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>聯絡我</h2>
+    <p>📧 Email: <a href="mailto:ryanhuang@example.com">ryanhuang@example.com</a></p>
+    <p>💻 GitHub: <a href="https://github.com/ryanhuang0212" target="_blank">github.com/ryanhuang0212</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 黃敬中</p>
+  </footer>
 </body>
 </html>
