@@ -1,8 +1,11 @@
+css_content = """
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&family=Sora:wght@400;700&display=swap');
+
 :root {
   --bg: #0f0f0f;
-  --fg: #b3ecff;        /* 主文字色：亮藍白 */
-  --subtext: #ffffff;   /* 次文字色：清爽藍 */
-  --accent: #ffffff;    /* 主強調色：科技藍亮點 */
+  --fg: #b3ecff;
+  --subtext: #ffffff;
+  --accent: #ffffff;
 }
 
 html {
@@ -14,7 +17,7 @@ body {
   padding: 0;
   background-color: var(--bg);
   color: var(--fg);
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-family: 'IBM Plex Sans', 'Sora', 'Helvetica Neue', Arial, sans-serif;
   line-height: 1.6;
 }
 
@@ -26,6 +29,17 @@ header {
   border-bottom: 2px solid #222;
 }
 
+h1, h2, h3 {
+  font-family: 'Sora', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+p, a, li, span {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 400;
+}
+
 h1 {
   font-size: 2.8em;
   margin-bottom: 0.3em;
@@ -34,7 +48,7 @@ h1 {
 
 header p {
   font-size: 1.2em;
-  color:  var(--subtext);
+  color: var(--subtext);
 }
 
 nav {
@@ -46,11 +60,12 @@ nav a {
   margin: 0 15px;
   text-decoration: none;
   font-weight: 500;
-  transition: color 0.3s;
+  transition: color 0.3s, letter-spacing 0.3s;
 }
 
 nav a:hover {
   color: var(--accent);
+  letter-spacing: 1px;
 }
 
 section {
@@ -94,10 +109,12 @@ section h2 {
   color: #00ffff;
   text-decoration: none;
   font-weight: bold;
+  transition: color 0.3s, letter-spacing 0.3s;
 }
 
 .project-card a:hover {
   text-decoration: underline;
+  letter-spacing: 1px;
 }
 
 footer {
@@ -148,9 +165,8 @@ footer {
 
 .info-card p {
   margin: 0.3em 0;
-  color: var(--fg)
+  color: var(--fg);
 }
-
 
 #hero {
   padding: 60px 20px;
@@ -209,11 +225,10 @@ footer {
   color: var(--bg);
 }
 
-/* 照片樣式：圓角、陰影、尺寸統一 */
 .hero-image img {
   max-width: 300px;
   border-radius: 20px;
-  box-shadow: 0 0 30px rgba(241, 202, 255, 0.15);
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.15);
   transition: transform 0.3s ease;
 }
 
@@ -221,7 +236,6 @@ footer {
   transform: scale(1.03);
 }
 
-/* 手機板自動改為上下排列 */
 @media (max-width: 768px) {
   .hero-container {
     flex-direction: column;
@@ -232,3 +246,11 @@ footer {
     margin-top: 20px;
   }
 }
+"""
+
+from pathlib import Path
+
+css_path = Path("/mnt/data/style.css")
+css_path.write_text(css_content)
+
+css_path.name
