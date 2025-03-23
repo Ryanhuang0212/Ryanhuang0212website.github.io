@@ -68,9 +68,9 @@ nav a:hover {
 }
 
 section {
-  padding: 50px 30px;
+  max-width: 700px;        /* 原本 800px */
+  padding: 40px 24px; 
   margin: 50px auto;
-  max-width: 800px;
   background: #111;
   border: 2px solid var(--accent);
   border-radius: 12px;
