@@ -140,7 +140,7 @@ section h2 {
 
 .project-card img.project-img {
   display: block;
-  max-width: 200px;   /* 更小一點 */
+  max-width: 300px;   /* 更小一點 */
   width: 100%;
   height: auto;
   margin: 0 0 15px 0;
