@@ -138,6 +138,20 @@ section h2 {
   letter-spacing: 1px;
 }
 
+.project-content {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.project-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255,255,255,0.1);
+}
+
 footer {
   text-align: center;
   font-size: 0.9em;
