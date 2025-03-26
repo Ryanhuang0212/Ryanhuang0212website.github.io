@@ -143,8 +143,8 @@ section h2 {
   max-width: 500px;   /* 更小一點 */
   width: 100%;
   height: auto;
-  margin: 0 0 15px 0;
-  border-radius: 10px;
+  margin: 0 0 18px 0;
+  border-radius: 12px;
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.08);
 }
 
